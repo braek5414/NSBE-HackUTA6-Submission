@@ -9,10 +9,10 @@ pygame.init()
 SCREEN = pygame.display.set_mode((1280, 720))
 pygame.display.set_caption("Menu")
 
-BG = pygame.image.load("Black.jpeg")
+BG = pygame.image.load("assets/Black.jpeg")
 
 def get_font(size): # Returns Press-Start-2P in the desired size
-    return pygame.font.Font("font.ttf", size)
+    return pygame.font.Font("assets/font.ttf", size)
 
 SCREEN_WIDTH = 1280
 SCREEN_HEIGHT = 720
@@ -213,7 +213,7 @@ INITIAL_PLATFORM_COUNT = 8  # Starting number of platforms
 LAVA_SPEED = 1  # Speed at which the lava rises
 
 # Load ninja image
-ninja_image = pygame.image.load("ninja.gif")  # Use the uploaded ninja image
+ninja_image = pygame.image.load("assets/ninja.gif")  # Use the uploaded ninja image
 
 # Colors
 WHITE = (255, 255, 255)
@@ -310,11 +310,11 @@ def main_menu():
         MENU_TEXT = get_font(100).render("LAVA NINJA", True, "#F7342B")
         MENU_RECT = MENU_TEXT.get_rect(center=(640, 100))
 
-        PLAY_BUTTON = Button(image=pygame.image.load("Play_Rect.png"), pos=(640, 250), 
+        PLAY_BUTTON = Button(image=pygame.image.load("assets/Play_Rect.png"), pos=(640, 250), 
                             text_input="PLAY", font=get_font(75), base_color="#d7fcd4", hovering_color="White")
-        OPTIONS_BUTTON = Button(image=pygame.image.load("Options_Rect.png"), pos=(640, 400), 
+        OPTIONS_BUTTON = Button(image=pygame.image.load("assets/Options_Rect.png"), pos=(640, 400), 
                             text_input="OPTIONS", font=get_font(75), base_color="#d7fcd4", hovering_color="White")
-        QUIT_BUTTON = Button(image=pygame.image.load("Quit_Rect.png"), pos=(640, 550), 
+        QUIT_BUTTON = Button(image=pygame.image.load("assets/Quit_Rect.png"), pos=(640, 550), 
                             text_input="QUIT", font=get_font(75), base_color="#d7fcd4", hovering_color="White")
 
         SCREEN.blit(MENU_TEXT, MENU_RECT)
