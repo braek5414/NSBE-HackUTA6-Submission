@@ -1,0 +1,8 @@
+#!/home/draxicon/Documents/School/HackUTA6/ForkUTA6/NSBE-HackUTA6-Submission/pygbag_env/bin/python
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pygbag.app import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
